@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 프로모션 css */
+
+.promotion .inner {
+}
+.promotion .section-top {
+  display: none;
+}
+
+.sw-promotion a {
+  display: block;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.sw-promotion img {
+  width: 100%;
+  height: auto;
+}
+/* pagination */
+.sw-promotion-control {
+  position: relative;
+  text-align: center;
+  display: none;
+}

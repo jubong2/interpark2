@@ -1,0 +1,81 @@
+@charset "utf-8";
+.sw-tour {
+  width: 100%;
+}
+.tour-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.tour-img {
+  position: relative;
+  width: 100%;
+  /* 1280px 일때 높이가 245 px 이다. */
+  /* 1280px 이 100vw 라면  */
+  /* 245px 은 몇 vw 일까? */
+  /*  245 / 1280 * 100  */
+  height: 19.14vw;
+  max-height: 245px;
+  min-width: 230px;
+  min-height: 150px;
+  overflow: hidden;
+}
+.tour-img img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tour-info {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.tour-info-list li {
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.tour-cate {
+  position: absolute;
+  top: -39px;
+  left: 0;
+  display: inline-block;
+  background: #4a95ff;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+.tour-title {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4a95ff;
+  /* 말줄임 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* 말줄임 넓이 지정 */
+  /* max-width: 200px; */
+}
+.tour-price {
+  color: #111;
+  font-size: 16px;
+  line-height: 24px;
+}
+.tour-price b {
+  font-weight: 700;
+  font-size: 20px;
+}
+.tour-place {
+  color: #111;
+}

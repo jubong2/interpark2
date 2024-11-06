@@ -1,0 +1,141 @@
+@charset "utf-8";
+@media screen and (max-width: 1280px) {
+  .inner {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    max-width: 760px;
+    padding: 0 20px;
+    border-bottom: 8px solid #f0f0f0;
+  }
+  .header {
+    border: none;
+  }
+  .header .inner {
+    height: 230px;
+    padding: 15px 0;
+  }
+  .header-left {
+    width: 70%;
+  }
+  .logo {
+    width: 77px;
+    /* height: 18px; */
+  }
+  .member-list {
+    display: none;
+  }
+  .mb-mypage {
+    display: block;
+  }
+  .service-menu {
+    display: none;
+  }
+  .header-down {
+    justify-content: center;
+  }
+  .service-list li {
+    display: flex;
+    width: 48px;
+  }
+  .service-list li a {
+    font-size: 12px;
+    text-align: center;
+  }
+  .service-list li a img {
+    width: 100%;
+    height: 48px;
+    margin: 0;
+  }
+  .header-left {
+    flex: none;
+  }
+  .search {
+    position: absolute;
+    top: 157px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sw-promotion-control {
+    display: block;
+    height: 23px;
+  }
+  .sw-promotion-pg {
+    height: 100%;
+    margin-top: 10px;
+  }
+  .swiper-pagination-bullet {
+    border-radius: 0;
+    background-color: blue;
+  }
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    background-color: red;
+  }
+  .live .section-slide {
+    height: 400px;
+  }
+  html {
+    font-size: 8px;
+  }
+  .books-img img {
+    height: auto;
+  }
+  .quick-menu {
+    display: block;
+  }
+  .footer-mobile {
+    display: block;
+  }
+  .even .inner {
+    border-bottom: none;
+  }
+  .footer-menu,
+  .footer-main {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .live .section-slide {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .live .section-slide {
+    height: 300px;
+  }
+  html {
+    font-size: 6px;
+  }
+  .live-info-date {
+    line-height: 20px;
+    margin-bottom: 5px;
+    display: none;
+  }
+  .live-info-time {
+    line-height: 3px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 480px) {
+  .inner {
+    max-width: 360px;
+    padding: 0 20px;
+  }
+  .search {
+    width: 310px;
+    padding: 0;
+    top: 77px;
+  }
+  .header-down {
+    display: none;
+  }
+  .header .inner {
+    height: 150px;
+  }
+  .live-img img {
+    width: 100%;
+  }
+}

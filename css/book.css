@@ -1,0 +1,36 @@
+@charset "utf-8";
+.books-img {
+  position: relative;
+  width: 100%;
+  height: 335px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.books-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+.books-info {
+    text-align: center;
+  }
+  .books-info-title {
+    font-size: 15px;
+    line-height: 18px;
+    /* 1줄 말줄임 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 8px 0;
+  }
+  .books-info-price {
+    font-size: 16px;
+  }
+  .books-info-price em {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+  }

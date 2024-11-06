@@ -1,0 +1,94 @@
+@charset "utf-8";
+.ticket .section-slide .sw-bt{
+    top:59%;
+}
+.ticket-link {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ticket-img {
+  position: relative;
+  width: 100%;
+  /* 1280px 일때 높이가 400 px 이다. */
+  /* 1280px 이 100vw 라면  */
+  /* 400px 은 몇 vw 일까? */
+  /*  400 / 1280 * 100  */
+  height: 31.25vw;
+  min-height: 180px;
+  max-height: 400px;
+  overflow: hidden;
+}
+.ticket-img::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), linear-gradient(180deg, transparent 68.5%, rgba(0, 0, 0, 0.6));
+}
+.ticket-img img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.ticket-rank {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  z-index: 1;
+}
+.ticket-info {
+  padding: 20px 10px;
+  background: #fff;
+}
+.ticket-info-list li {
+  margin-bottom: 5px;
+}
+.ticket-info-list li:last-child {
+  margin-bottom: 0;
+}
+
+.ticket-title b {
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ticket-hall {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #666;
+  /* 1줄 ... 처리 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ticket-date {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #999;
+}
+.ticket-sale {
+  display: inline-block;
+  line-height: 24px;
+  font-size: 11px;
+  padding: 0 8px;
+  color: #ef3e43;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  border-radius: 3px;
+}

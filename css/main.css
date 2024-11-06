@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* 폰트를 가져오기 */
+@import url("font.css");
+@import url("header.css");
+@import url("promotion.css");
+@import url("shopping.css");
+@import url("tour.css");
+@import url("ticket.css");
+@import url("live.css");
+@import url("book.css");
+@import url("footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+body {
+  font-family: "Pretendard", sans-serif;
+}
+/* 공통클래스 */
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* section 공동클래스*/
+.wrap > section {
+  padding: 30px 0 90px 0;
+}
+
+.section-top {
+  text-align: center;
+}
+
+.section-top > h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-top > p {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section-slide {
+  margin-bottom: 20px;
+}
+/* 섹션안에 버튼 */
+.section-top .btns {
+  margin: 25px 0;
+}
+.section-top .btns a {
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+  line-height: 42px;
+  font-size: 14px;
+  color: #111;
+  background: #fff;
+  margin-right: 6px;
+}
+
+.btns-active {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+.bt-link-shop {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 56px;
+  padding: 0 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.bt-link-shop::after {
+  position: relative;
+  display: inline-block;
+  content: "";
+  background: url("../images/icon_linkArrow.svg") no-repeat center;
+  width: 17px;
+  height: 17px;
+}
+/* 색션하단의 링크버튼 */
+.section-bottom {
+  text-align: center;
+}
+/* 스와이퍼 네비게이션 버튼 */
+.sw-bt {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  font-size: 0;
+  cursor: pointer;
+}
+.sw-bt::before {
+  content: "";
+  width: 8px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 4px);
+  background: url("../images/slider_arrow.svg") no-repeat center;
+}
+
+.sw-prev::before {
+  transform: scaleX(-100%);
+}
+.sw-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+} /* 플라잉배너 */
+
+.sw-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  z-index: 99;
+}
+/* 퀵메뉴 */
+.quick-menu {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99999;
+  padding: 0px 20px 20px;
+}
+.quick-menu .inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* 플라잉 베너 */
+.fix-banner {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999999;
+  text-align: center;
+}
+.fix-banner a {
+  display: block;
+  border-radius: 50px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+}
+.fix-banner a img {
+}
+#gotop {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff url("../images/btn_topArrow.svg") no-repeat center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  font-size: 0;
+  margin-top: 10px;
+}
